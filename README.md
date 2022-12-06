@@ -1,22 +1,25 @@
 # ft_president
 
-# pour les gouverner tous
+# Pour les gouverner tous
 
 Ça y est, vous avez été élu à la présidence. Vous maintenant réaliser votre rêve : les gouverner tous !
 Mais vous vous retrouvez cependant face à un problème, il y a beaucoup trop de régions et vous avez du mal à les retenir, vous voulez donc les fusionner. Mais voilà qu'un autre problème surgit : la colère gronde dans le pays, il y a beaucoup trop d'écart de PIB, et certaines régions sont bien plus pauvres que d'autre, il faudrait que vos nouvelles régions équilibrent les richesses. Hélas, dans votre équipe de développeurs, il n'y a aucun élève de l'école 42... Vous allez donc devoir vous débrouiller tout seul, et ressortir vos livres d'algorythmie !
 
 # Votre mission
 
-  Votre programme devra compiler avec un makefile, l'executable devra s'appeller <ft_president>, il recevra en premier argument un fichier, qui contiendra l'ensemble des régions, puis en second argument un fichier, qui recevra la réponse, et en troisième argument un nombre, qui correspondra au nombre de régions voulu. 
+Votre programme devra compiler avec un makefile, l'executable devra s'appeller <ft_president>, il recevra en premier argument un fichier, qui contiendra l'ensemble des régions, puis en second argument un fichier, qui recevra la réponse, et en troisième argument un nombre, qui correspondra au nombre de régions voulu. 
   
   La commande s'executera ainsi : 
-./ft_president <nom de fichier 1> <nom de fichier 2> <nombre de régions>
+	
+```./ft_president <nom de fichier 1> <nom de fichier 2> <nombre de régions>```
 
   Chaque ligne du premier fichier se comporteront ainsi :
-<nom de région 1> : <PIB de la région> : <région touchée 1>-<région touchée 2>-<région touchée trois>
+	
+```<nom de région 1> : <PIB de la région> : <région touchée 1>-<région touchée 2>-<région touchée trois>```
 
   Chaque ligne du second fichier devront se comporter ainsi :
-<nom de fusionnée région 1>-<nom de région fusionnée 2>-<nom de région fusionnée 3>
+	
+```<nom de fusionnée région 1>-<nom de région fusionnée 2>-<nom de région fusionnée 3>```
 
 Votre programme devra écrire le nombre de régions souhaités, dans le fichiers de sorties, s'il ne trouve pas le bon nombre de régions, il devra écrire "Error" suivit d'un retour à la ligne. Vous avez le droit de vous servir de la sortie standard à votre guise. Vous devrez suivre deux règles :
   Pour fusionner deux régions entre elles, elles doivent se toucher.
@@ -32,8 +35,8 @@ Si une de ces conditions n'est pas vérifiée, votre résultat sera faux.
   # Votre récompense
   
   Les trois meilleurs participants auront un au choix
-  -2 cookies par membre
-  -un autographe de Aurèle
-  -2 figurines de Noël.
+  * 2 cookies par membre
+  * un autographe d'une star de l'Ecole
+  * 2 figurines de Noël.
   
   Si deux groupes ont le même score, alors ils seront départagés sur le temps.
