@@ -223,8 +223,8 @@ int main(int argc, char **argv){
     
     char ***ret = ItsToYouToPlay(result, numberRegion);
 
-    //if (ret == NULL)
-	//	return Error(fdRet);
+    if (ret == NULL)
+		return Error(fdRet);
 	PrintRet(ret,  fdRet);
 	FreeRegion(result, -1);
     Freepointerpointerstr(ret);
