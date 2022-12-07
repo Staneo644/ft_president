@@ -37,6 +37,8 @@ Si une de ces conditions n'est pas vérifiée, votre résultat sera faux.
 
   Une vingtaine de tests seront faits, dont la moitié sera avec le nombre de régions souhaités à 2.
   
+  Un fichier de parsing en C est donné avec le git, si vous le souhaité, vous pouvez vous en servir, vous pouvez aussi le modifier à votre guise.
+  
   # Votre récompense
   
   Les trois meilleurs participants auront un au choix
