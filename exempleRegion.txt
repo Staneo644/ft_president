@@ -1,0 +1,12 @@
+Nord : 166 : Paris-Alsace-Normandie
+Alsace : 160 : Paris-Bourgogne-Nord
+Normandie : 95 : Paris-Nord-Bretagne-Loire-Centre
+Auvergne : 272 : Aquitaine-Occitanie-Azur-Bourgogne-Centre
+Bretagne : 98 : Normandie-Loire
+Paris : 726 : Bretagne-Nord-Alsace-Normandie-Bourgogne
+Bourgogne : 78 : Paris-Alsace-Auvergne-Centre
+Centre : 74 : Auvergne-Aquitaine-Loire-Normandie-Paris-Bourgogne
+Loire : 117 : Bretagne-Aquitaine-Centre-Normandie
+Aquitaine : 176 : Loire-Centre-Auvergne-Occitanie
+Occitanie : 173 : Aquitaine-Auvergne-Azur
+Azur : 166 : Auvergne-Occitanie
