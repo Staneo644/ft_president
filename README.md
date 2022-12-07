@@ -21,6 +21,10 @@ Votre programme devra compiler avec un makefile, l'executable devra s'appeller <
 	
 ```<nom de fusionnée région 1>-<nom de région fusionnée 2>-<nom de région fusionnée 3>```
 
+Vous avez ce git des exemples des fichiers données, avec le resulutat de la fonction 
+
+```./ft_president exempleRegion.txt resultat.txt 6```
+
 Votre programme devra écrire le nombre de régions souhaités, dans le fichiers de sorties, s'il ne trouve pas le bon nombre de régions, il devra écrire "Error" suivit d'un retour à la ligne. Vous avez le droit de vous servir de la sortie standard à votre guise. Vous devrez suivre deux règles :
   * Pour fusionner deux régions entre elles, elles doivent se toucher.
   * Le résultat que vous donnez doit avoir l'écart-type le plus bas.
