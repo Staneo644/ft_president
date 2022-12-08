@@ -11,17 +11,17 @@ Votre programme devra compiler avec un makefile, l'executable devra s'appeller <
   
   La commande s'executera ainsi : 
 	
-```./ft_president <nom de fichier 1> <nom de fichier 2> <nombre de régions>```
+```./ft_president <nom du fichier d'entrée> <nom du fichier de sortie> <nombre de régions>```
 
-  Chaque ligne du premier fichier se comporteront ainsi :
+  Chaque ligne du fichier d'entrée se comporteront ainsi :
 	
 ```<nom de région 1> : <PIB de la région> : <région touchée 1>-<région touchée 2>-<région touchée trois>```
 
-  Chaque ligne du second fichier devront se comporter ainsi :
+  Chaque ligne du fichier de sortie devront se comporter ainsi :
 	
 ```<nom de fusionnée région 1>-<nom de région fusionnée 2>-<nom de région fusionnée 3>```
 
-Vous avez ce git des exemples des fichiers données, avec le resulutat de la fonction 
+Vous avez ce git des exemples du fichier d'entrée et de sortie, avec le resulutat de la fonction 
 
 ```./ft_president exempleRegion.txt resultat.txt 6```
 
