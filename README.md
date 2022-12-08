@@ -41,7 +41,7 @@ Si une de ces conditions n'est pas vérifiée, votre résultat sera faux.
   
   # Votre récompense
   
-  Les trois meilleurs participants auront un au choix
+  Les trois meilleurs participants auront au choix
   * 2 cookies par membre
   * un autographe d'une star de l'Ecole
   * 2 figurines de Noël.
