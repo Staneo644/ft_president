@@ -10,15 +10,39 @@
 typedef struct s_Region{
     char* name;
     struct s_Region** regionTouch;
-    int PIB;
+    int GDP;
     char** temp;
 
 } t_Region;
 
 
+
+
 char ***ItsToYouToPlay(t_Region **result, int numberRegion){
+    
+    //You begin here//
+    //result is an array of t_region with the name, the region touching, and the GDP (which is translated into french by 'PIB'), numberRegion is the number of regions we want
+    
+    
+
+
+    
+    
+
+
+
+
+
+    //Joyeux Noel !!!!!////////
     return NULL;
 }
+
+
+
+
+
+
+
 
 char** MySplitIsBiggerThanYours(char *str, char delim){
   
@@ -115,7 +139,7 @@ t_Region** FreeRegion(t_Region** myRegion, int i){
 t_Region** ReadTheFile(FILE* fd){
     char bufferName[REGIONMAXCARACTER];
     char bufferList[REGIONMAXCARACTER * MAXCONTACT + MAXCONTACT - 1];
-    int bufferPIB[1];
+    int bufferGDP[1];
     t_Region **myRegion;
     myRegion = malloc(sizeof (t_Region*) * MAXREGION);
     if (!myRegion)
@@ -123,14 +147,14 @@ t_Region** ReadTheFile(FILE* fd){
     int i = 0;
     int result = 3;
     while (result == 3 && i < MAXREGION){
-        result = fscanf(fd, "%s : %d : %s\n", bufferName, bufferPIB, bufferList);
+        result = fscanf(fd, "%s : %d : %s\n", bufferName, bufferGDP, bufferList);
         if (result == 3){
-            //printf("Read Name |%s| PIB = |%d| ListofName = |%s| Result = |%d| \n", bufferName, *bufferPIB, bufferList,result); 
+            //printf("Read Name |%s| GDP = |%d| ListofName = |%s| Result = |%d| \n", bufferName, *bufferGDP, bufferList,result); 
             myRegion[i] = malloc(sizeof(t_Region));
             if (myRegion[i] == NULL)
                 return FreeRegion(myRegion, -1);
             myRegion[i]->temp = MySplitIsBiggerThanYours(bufferList, '-');
-            myRegion[i]->PIB = *bufferPIB;
+            myRegion[i]->GDP = *bufferGDP;
             myRegion[i]->name = strdup(bufferName);
             if (!myRegion[i]->temp || !myRegion[i]-> name)
                 return FreeRegion(myRegion, i);
