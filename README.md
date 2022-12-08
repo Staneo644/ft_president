@@ -17,9 +17,9 @@ Votre programme devra compiler avec un makefile, l'executable devra s'appeller <
 	
 ```<nom de région 1> : <PIB de la région> : <région touchée 1>-<région touchée 2>-<région touchée trois>```
 
-  Chaque ligne du fichier de sortie devront se comporter ainsi :
+  Chaque ligne du fichier de sortie devront se comporter, pour illustrer les régions fusionnées :
 	
-```<nom de fusionnée région 1>-<nom de région fusionnée 2>-<nom de région fusionnée 3>```
+```<nom de région 1>-<nom de région 2>-<nom de région 3>```
 
 Vous avez ce git des exemples du fichier d'entrée et de sortie, avec le resulutat de la fonction 
 
