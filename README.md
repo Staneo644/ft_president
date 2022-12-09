@@ -37,7 +37,7 @@ Si une de ces conditions n'est pas vérifiée, votre résultat sera faux.
 
   42 tests seront faits, dont la moitié avec le nombre de régions souhaités à 2.
   
-  Un fichier de parsing en C est donné avec le git, si vous le souhaité, vous pouvez vous en servir, vous pouvez aussi le modifier à votre guise.
+  Un fichier de parsing en C est donné avec le git, si vous le souhaitez, vous pouvez vous en servir, vous pouvez aussi le modifier à votre guise. 
   
   # Votre récompense
   
@@ -48,4 +48,4 @@ Si une de ces conditions n'est pas vérifiée, votre résultat sera faux.
   * un autographe d'une star de l'Ecole
   * 2 figurines de Noël.
   
-  Si deux groupes ont le même score, alors ils seront départagés sur le temps additionné de chacun de leur tests.
+  Si deux groupes ont le même score, alors ils seront départagés en regardant le résultat de la somme de chacun de leur tests.
