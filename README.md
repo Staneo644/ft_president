@@ -25,7 +25,7 @@ Vous dans ce git des exemples des fichiers d'entrée et de sortie, avec le résu
 
 ```./ft_president exempleRegion.txt resultat.txt 6```
 
-Votre programme devra écrire le nombre de régions souhaitées, dans le fichiers de sorties, s'il ne trouve pas le bon nombre de régions, il devra écrire "Error" suivit d'un retour à la ligne. Vous avez le droit de vous servir de la sortie standard à votre guise. Vous devrez suivre deux règles :
+Votre programme devra écrire le nombre de régions souhaitées, dans le fichier de sorties, s'il ne trouve pas le bon nombre de régions, il devra écrire "Error" suivi d'un retour à la ligne. Vous avez le droit de vous servir de la sortie standard à votre guise. Vous devrez suivre deux règles :
   * Pour fusionner deux régions entre elles, elles doivent se toucher.
   * Le résultat que vous donnez doit avoir l'écart-type le plus bas.
 
