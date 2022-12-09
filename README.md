@@ -3,13 +3,13 @@
 # Pour les gouverner tous
 
 Ça y est, vous avez été élu à la présidence. Vous maintenant réaliser votre rêve : les gouverner tous !
-Mais vous vous retrouvez cependant fâce à un problème, il y a beaucoup trop de régions et vous avez du mal à les retenir, vous voulez donc les fusionner. Mais voilà qu'un autre problème surgit : la colère gronde dans le pays, il y a beaucoup trop d'écart de PIB, et certaines régions sont bien plus pauvres que d'autre, il faudrait que vos nouvelles régions équilibrent les richesses. Hélas, dans votre équipe de développeurs, il n'y a aucun élève de l'école 42... Vous allez donc devoir vous débrouiller tout seul, et ressortir vos livres d'algorythmie !
+Mais vous vous retrouvez cependant face à un problème, il y a beaucoup trop de régions et vous avez du mal à les retenir, vous voulez donc les fusionner. Mais voilà qu'un autre problème surgit : la colère gronde dans le pays, il y a beaucoup trop d'écart de PIB, et certaines régions sont bien plus pauvres que d'autre, il faudrait que vos nouvelles régions équilibrent les richesses. Hélas, dans votre équipe de développeurs, il n'y a aucun élève de l'école 42... Vous allez donc devoir vous débrouiller tout seul, et ressortir vos livres d'algorithmie !
 
 # Votre mission
 
-Votre programme devra s'executer avec un script bash, qui s'appellera <ft_president>, il recevra en premier argument un fichier d'entrée, qui contiendra l'ensemble des régions, puis en second argument un fichier de sortie, qui recevra la réponse, et en troisième argument un nombre, qui correspondra au nombre de régions voulu.
+Votre programme devra s'exécuter avec un script bash, qui s'appellera <ft_president>, il recevra en premier argument un fichier d'entrée, qui contiendra l'ensemble des régions, puis en second argument un fichier de sortie, qui recevra la réponse, et en troisième argument un nombre, qui correspondra au nombre de régions voulu.
   
-  La commande s'executera ainsi : 
+  La commande s'exécutera ainsi : 
 	
 ```./ft_president <nom du fichier d'entrée> <nom du fichier de sortie> <nombre de régions>```
 
@@ -21,7 +21,7 @@ Votre programme devra s'executer avec un script bash, qui s'appellera <ft_presid
 	
 ```<nom de région 1>-<nom de région 2>-<nom de région 3>```
 
-Vous avez ce git des exemples des fichiers d'entrée et de sortie, avec le resulutat de la commande
+Vous avez ce git des exemples des fichiers d'entrée et de sortie, avec le résultat de la commande
 
 ```./ft_president exempleRegion.txt resultat.txt 6```
 
@@ -32,8 +32,8 @@ Votre programme devra écrire le nombre de régions souhaités, dans le fichiers
 Si une de ces conditions n'est pas vérifiée, votre résultat sera faux.
 
 
-  Le parsing ne sera pas testé, le but est de réaliser l'execution, les valeurs au-delà de int ne seront pas testées.
-  Le graphe réalisé par ces régions ne sera pas connexe, pas orienté, il n'y aura pas de boucle, ni d'arrètes multiples, l'ordre du graphe ne dépassera pas 30, et il ne sera pas forcément complet.
+  Le parsing ne sera pas testé, le but est de réaliser l'exécution, les valeurs au-delà de int ne seront pas testées.
+  Le graphe réalisé par ces régions ne sera pas connexe, pas orienté, il n'y aura pas de boucle, ni d'arêtes multiples, l'ordre du graphe ne dépassera pas 30, et il ne sera pas forcément complet.
 
   42 tests seront faits, dont la moitié avec le nombre de régions souhaités à 2.
   
