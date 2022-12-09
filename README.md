@@ -7,7 +7,7 @@ Mais vous vous retrouvez cependant face à un problème, il y a beaucoup trop de
 
 # Votre mission
 
-Votre programme devra s'executer avec un programme shell, qui s'appellera <ft_president>, il recevra en premier argument un fichier, qui contiendra l'ensemble des régions, puis en second argument un fichier, qui recevra la réponse, et en troisième argument un nombre, qui correspondra au nombre de régions voulu.
+Votre programme devra s'executer avec un programme shell, qui s'appellera <ft_president>, il recevra en premier argument un fichier d'entrée, qui contiendra l'ensemble des régions, puis en second argument un fichier de sortie, qui recevra la réponse, et en troisième argument un nombre, qui correspondra au nombre de régions voulu.
   
   La commande s'executera ainsi : 
 	
@@ -21,7 +21,7 @@ Votre programme devra s'executer avec un programme shell, qui s'appellera <ft_pr
 	
 ```<nom de région 1>-<nom de région 2>-<nom de région 3>```
 
-Vous avez ce git des exemples du fichier d'entrée et de sortie, avec le resulutat de la commande
+Vous avez ce git des exemples des fichiers d'entrée et de sortie, avec le resulutat de la commande
 
 ```./ft_president exempleRegion.txt resultat.txt 6```
 
