@@ -41,7 +41,7 @@ Si une de ces conditions n'est pas vérifiée, votre résultat sera faux.
   
   # Le rendu
   
-  Vous allez créer votre propre git, et vous enverrez le lien à 'Staneo644', il clonera tous les projets dimanche, à 23h41.
+  Vous allez créer votre propre git, et vous enverrez le lien à 'Staneo644', le projet devra être rendu dimanche, à 23h41.
   
   
   # Votre récompense
