@@ -21,7 +21,7 @@ Votre programme devra s'exécuter avec un script bash, qui s'appellera <ft_presi
 	
 ```<nom de région 1>-<nom de région 2>-<nom de région 3>```
 
-Vous dans ce git des exemples des fichiers d'entrée et de sortie, avec le résultat de la commande
+Vous avez dans ce git des exemples des fichiers d'entrée et de sortie, avec le résultat de la commande
 
 ```./ft_president exempleRegion.txt resultat.txt 6```
 
