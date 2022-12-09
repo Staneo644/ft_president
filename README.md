@@ -48,4 +48,4 @@ Si une de ces conditions n'est pas vérifiée, votre résultat sera faux.
   * un autographe d'une star de l'Ecole
   * 2 figurines de Noël.
   
-  Si deux groupes ont le même score, alors ils seront départagés en regardant le résultat de la somme du temps d'execution de chacun des tests.
+  Si deux groupes ont le même score, alors ils seront départagés en regardant la somme du temps d'execution de chacun des tests.
