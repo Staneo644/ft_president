@@ -39,6 +39,11 @@ Si une de ces conditions n'est pas vérifiée, votre résultat sera faux.
   
   Un fichier de parsing en C est donné avec le git, si vous le souhaitez, vous pouvez vous en servir, vous pouvez aussi le modifier à votre guise. 
   
+  # Le rendu
+  
+  Vous allez créer votre propre git, et vous enverrez le lien à 'Staneo644', il clonera tous les projets dimanche, à 23h41.
+  
+  
   # Votre récompense
   
   Tout ceux qui auront validé tous les tests recevront leur Diplôme National de Souveraineté (DNS)
