@@ -7,11 +7,11 @@ Mais vous vous retrouvez cependant face à un problème, il y a beaucoup trop de
 
 # Votre mission
 
-Votre programme devra s'exécuter avec un script bash, qui s'appellera <ft_president>, il recevra en premier argument un fichier d'entrée, qui contiendra l'ensemble des régions, puis en second argument un fichier de sortie, qui recevra la réponse, et en troisième argument un nombre, qui correspondra au nombre de régions voulu.
+Votre programme devra s'exécuter avec un script bash, qui s'appellera <ft_president.sh>, il recevra en premier argument un fichier d'entrée, qui contiendra l'ensemble des régions, puis en second argument un fichier de sortie, qui recevra la réponse, et en troisième argument un nombre, qui correspondra au nombre de régions voulu.
   
   La commande s'exécutera ainsi : 
 	
-```./ft_president <nom du fichier d'entrée> <nom du fichier de sortie> <nombre de régions>```
+```./ft_president.sh <nom du fichier d'entrée> <nom du fichier de sortie> <nombre de régions>```
 
   Chaque ligne du fichier d'entrée se comporteront ainsi :
 	
