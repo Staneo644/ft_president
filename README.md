@@ -2,7 +2,7 @@
 
 # Pour les gouverner tous
 
-Ça y est, vous avez été élu à la présidence. Vous maintenant réaliser votre rêve : les gouverner tous !
+Ça y est, vous avez été élu à la présidence. Vous pouvez maintenant réaliser votre rêve : les gouverner tous !
 Mais vous vous retrouvez cependant face à un problème, il y a beaucoup trop de régions et vous avez du mal à les retenir, vous voulez donc les fusionner. Mais voilà qu'un autre problème surgit : la colère gronde dans le pays, il y a beaucoup trop d'écart de PIB, et certaines régions sont bien plus pauvres que d'autre, il faudrait que vos nouvelles régions équilibrent les richesses. Hélas, dans votre équipe de développeurs, il n'y a aucun élève de l'école 42... Vous allez donc devoir vous débrouiller tout seul, et ressortir vos livres d'algorithmie !
 
 # Votre mission
