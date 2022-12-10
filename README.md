@@ -23,7 +23,7 @@ Votre programme devra s'exécuter avec un script bash, qui s'appellera <ft_presi
 
 Vous avez dans ce git des exemples des fichiers d'entrée et de sortie, avec le résultat de la commande
 
-```./ft_president exempleRegion.txt resultat.txt 6```
+```./ft_president.sh exempleRegion.txt resultat.txt 6```
 
 Votre programme devra écrire le nombre de régions souhaitées, dans le fichier de sorties, s'il ne trouve pas le bon nombre de régions, il devra écrire "Error" suivi d'un retour à la ligne. Vous avez le droit de vous servir de la sortie standard à votre guise. Vous devrez suivre deux règles :
   * Pour fusionner deux régions entre elles, elles doivent se toucher.
@@ -33,7 +33,7 @@ Si une de ces conditions n'est pas vérifiée, votre résultat sera faux.
 
 
   Le parsing ne sera pas testé, le but est de réaliser l'exécution, les valeurs au-delà de int ne seront pas testées.
-  Le graphe réalisé par ces régions ne sera pas connexe, pas orienté, il n'y aura pas de boucle, ni d'arêtes multiples, l'ordre du graphe ne dépassera pas 30, et il ne sera pas forcément complet.
+  Le graphe réalisé par ces régions ne sera pas connexe, pas orienté, il n'y aura pas de boucle (une région ne peut pas se toucher), ni d'arêtes multiples, l'ordre du graphe ne dépassera pas 30, et il ne sera pas forcément complet.
 
   42 tests seront faits, dont la moitié avec le nombre de régions souhaités à 2.
   
