@@ -46,7 +46,9 @@ Si une de ces conditions n'est pas vérifiée, votre résultat sera faux.
   
   # Votre récompense
   
-  Tout ceux qui auront validé tous les tests recevront leur Diplôme National de Souveraineté (DNS)
+  La cérémonie des récompenses aura lieu mardi après-midi.
+  
+  Tout ceux qui auront validé tous les tests recevront leur Diplôme National de Souveraineté (DNS).
   
   Les trois meilleurs participants auront au choix
   * 2 cookies par membre, ou une pinte, suivant les goûts
