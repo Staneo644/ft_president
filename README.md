@@ -33,8 +33,9 @@ Si une de ces conditions n'est pas vérifiée, votre résultat sera faux.
 
 
   Le parsing ne sera pas testé, le but est de réaliser l'exécution, les valeurs au-delà de int ne seront pas testées.
-  Le graphe réalisé par ces régions ne sera pas connexe, pas orienté, il n'y aura pas de boucle (une région ne peut pas se toucher), ni d'arêtes multiples, l'ordre du graphe ne dépassera pas 30, et il ne sera pas forcément complet.
-
+  Le graphe réalisé par ces régions ne sera pas connexe, pas orienté, il n'y aura pas de boucle (une région ne peut pas se toucher), ni d'arêtes multiples, l'ordre du graphe ne dépassera pas 30, et il ne sera pas forcément complet.   
+  Il n'y aura pas de régions qui ne touchera aucune région (la Corse n'existe pas).
+  
   42 tests seront faits, dont la moitié avec le nombre de régions souhaités à 2.
   
   Un fichier de parsing en C est donné avec le git, si vous le souhaitez, vous pouvez vous en servir, vous pouvez aussi le modifier à votre guise. 
