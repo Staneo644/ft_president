@@ -7,18 +7,18 @@
 #define REGIONMAXCARACTER 15
 #define MAXCONTACT MAXREGION - 1
 
-typedef struct s_Region{
+typedef struct s_region{
     char* name;
-    struct s_Region** regionTouch;
+    struct s_region** regionTouch;
     int GDP;
     char** temp;
 
-} t_Region;
+} t_region;
 
 
 
 
-char ***ItsToYouToPlay(t_Region **result, int numberRegion){
+char ***itsToYouToPlay(t_region **result, int numberRegion){
     
     //You begin here//
     //result is an array of t_region with the name, the region touching, and the GDP (which is translated into french by 'PIB'), numberRegion is the number of regions we want
@@ -26,25 +26,11 @@ char ***ItsToYouToPlay(t_Region **result, int numberRegion){
     
 
 
-    
-    
-
-
-
-
-
     //Joyeux Noel !!!!!////////
     return NULL;
 }
 
-
-
-
-
-
-
-
-char** MySplitIsBiggerThanYours(char *str, char delim){
+char** bigSplit(char *str, char delim){
   
 	if (str == NULL)
 		return (NULL);
@@ -102,11 +88,11 @@ char** MySplitIsBiggerThanYours(char *str, char delim){
 	return (bigarray);
 }
 
-int Error(FILE * errorFile){
+int error(FILE * errorFile){
     return fprintf(errorFile, "Error\n");
 }
 
-t_Region** FreeRegion(t_Region** myRegion, int i){
+t_region** freeRegion(t_region** myRegion, int i){
     if (i >= 0){
 
         if (myRegion[i]->temp){
@@ -134,14 +120,12 @@ t_Region** FreeRegion(t_Region** myRegion, int i){
     return NULL;
 }
 
-
-
-t_Region** ReadTheFile(FILE* fd){
+t_region** parseFile(FILE* fd){
     char bufferName[REGIONMAXCARACTER];
     char bufferList[REGIONMAXCARACTER * MAXCONTACT + MAXCONTACT - 1];
     int bufferGDP[1];
-    t_Region **myRegion;
-    myRegion = malloc(sizeof (t_Region*) * MAXREGION);
+    t_region **myRegion;
+    myRegion = malloc(sizeof (t_region*) * MAXREGION);
     if (!myRegion)
         return myRegion;
     int i = 0;
@@ -150,21 +134,21 @@ t_Region** ReadTheFile(FILE* fd){
         result = fscanf(fd, "%s : %d : %s\n", bufferName, bufferGDP, bufferList);
         if (result == 3){
             //printf("Read Name |%s| GDP = |%d| ListofName = |%s| Result = |%d| \n", bufferName, *bufferGDP, bufferList,result); 
-            myRegion[i] = malloc(sizeof(t_Region));
+            myRegion[i] = malloc(sizeof(t_region));
             if (myRegion[i] == NULL)
-                return FreeRegion(myRegion, -1);
-            myRegion[i]->temp = MySplitIsBiggerThanYours(bufferList, '-');
+                return freeRegion(myRegion, -1);
+            myRegion[i]->temp = bigSplit(bufferList, '-');
             myRegion[i]->GDP = *bufferGDP;
             myRegion[i]->name = strdup(bufferName);
             if (!myRegion[i]->temp || !myRegion[i]-> name)
-                return FreeRegion(myRegion, i);
+                return freeRegion(myRegion, i);
         }
         i++;
     }
     myRegion[--i] = NULL;
     if (result != -1){
-        printf("Error in parsing\n");
-        return FreeRegion(myRegion, -1);
+        printf("error in parsing\n");
+        return freeRegion(myRegion, -1);
     }
     return myRegion;
 }
@@ -177,40 +161,40 @@ int PointerStrlen(char **str){
     return i;
 }
 
-t_Region* SearchByName(t_Region** myRegion, char * _name){
+t_region* SearchByName(t_region** myRegion, char * _name){
     for (int i = 0; myRegion[i]; i++){
         if (strcmp(myRegion[i]->name, _name) == 0)
             return (myRegion[i]);
     }
-    dprintf(1, "Error, Region %s not find\n", _name);
+    dprintf(1, "error, Region %s not find\n", _name);
     return NULL;
 }
 
-t_Region** PutThePointer(t_Region** myRegion){
+t_region** PutThePointer(t_region** myRegion){
     for (int i = 0; myRegion[i] != NULL; i++){
         int size = PointerStrlen(myRegion[i]->temp);
-        myRegion[i]->regionTouch = malloc(sizeof (t_Region) * size);
+        myRegion[i]->regionTouch = malloc(sizeof (t_region) * size);
         if (myRegion[i]->regionTouch == NULL)
-            return FreeRegion(myRegion, -1);
+            return freeRegion(myRegion, -1);
         myRegion[i]->regionTouch[--size] = NULL;
         for (; size >= 0; size--){
             myRegion[i]->regionTouch[size] = SearchByName(myRegion, myRegion[i]->temp[size]);
             if (myRegion[i]->regionTouch[size] == NULL){
-                return FreeRegion(myRegion, -1);
+                return freeRegion(myRegion, -1);
             }
         }
     }
     return myRegion;
 }
 
-void Freepointerpointerstr(char ***str){
+void freePointerStr(char ***str){
     for (int i = 0; str[i]; i++){
         free(str[i]);
     }
     free(str);
 }
 
-void PrintRet(char ***ret, FILE * fdRet){
+void printRet(char ***ret, FILE * fdRet){
     for (int i = 0; ret[i]; i++){
 		for(int j = 0; ret[i][j]; j++){
 			fprintf(fdRet, "%s", ret[i][j]);
@@ -224,33 +208,33 @@ void PrintRet(char ***ret, FILE * fdRet){
 
 int main(int argc, char **argv){
     if (argc != 4)
-        return printf("Error : not the good number of argument\n");
+        return printf("error : not the good number of argument\n");
     
     FILE * fdRet = fopen(argv[2], "w");
     if (fdRet == NULL)
-        return printf("Error : could not create or open the first file\n");
-    
+        return printf("error : could not create or open the second file\n");
+
     FILE* fd = fopen(argv[1], "r");
     if (fd == NULL)
-        return Error(fdRet) + printf("Error : could not find or open the first file\n");
+        return error(fdRet) + printf("error : could not find or open the first file\n");
 
 	int numberRegion = atoi(argv[3]);
 	if (numberRegion < 1 || numberRegion > MAXREGION)
-		return Error(fdRet) + printf("Error : invalid number of region\n");
+		return error(fdRet) + printf("error : invalid number of region\n");
 
-    t_Region** result = ReadTheFile(fd);
+    t_region** result = parseFile(fd);
     if (result == NULL)
-        return Error(fdRet);
+        return error(fdRet);
     result = PutThePointer(result);
     if (result == NULL)
-        return Error(fdRet);
+        return error(fdRet);
     
-    char ***ret = ItsToYouToPlay(result, numberRegion);
+    char ***ret = itsToYouToPlay(result, numberRegion);
 
     if (ret == NULL)
-		return Error(fdRet);
-	PrintRet(ret,  fdRet);
-	FreeRegion(result, -1);
-    Freepointerpointerstr(ret);
+		return error(fdRet);
+	printRet(ret,  fdRet);
+	freeRegion(result, -1);
+    freePointerStr(ret);
     return 0;
 }
