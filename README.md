@@ -49,13 +49,6 @@ Si une de ces conditions n'est pas vérifiée, votre résultat sera faux.
   
   # Votre récompense
   
-  La cérémonie des récompenses aura lieu mardi après-midi.
+  La cérémonie des récompenses a eu lieu mardi après-midi.
   
-  Tout ceux qui auront validé tous les tests recevront leur Diplôme National de Souveraineté (DNS).
-  
-  Les trois meilleurs participants auront au choix
-  * 2 cookies par membre, ou une pinte, suivant les goûts
-  * un autographe d'une star de l'Ecole
-  * 2 figurines de Noël.
-  
-  Si deux groupes ont le même score, alors ils seront départagés sur la somme du temps d'execution de chacun des tests.
+  Tout ceux qui ont validé tous les tests ont reçu leur Diplôme National de Souveraineté (DNS).
